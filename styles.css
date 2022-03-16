@@ -3,7 +3,8 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:poppins;
+  font-family:'poppins';
+  outline :2px solid black
 }
 
 .content{
@@ -45,7 +46,7 @@
   transition: all 0.3s ease;
 }
 .menu-list li a:hover{
-  color:cyan
+  color:#1abc9c
 }
 
 .menu-list li a{
@@ -70,7 +71,26 @@
   margin:20px;
   gap:48%;
 }
+#home{
+      column-count: 2;
+  column-gap: 40px;
+  column-rule-width: 1px;
+  
+}
 
+.me{
+    padding: 30% 0% 25% 20%;
+}
+
+h2{
+    font-size: 40px;
+    padding-bottom: 16px;
+    
+}
+p{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
 @media (max-width: 868px){
   .icon{
     display:block;
@@ -106,5 +126,15 @@
   
     .navbar .menu-list li a{
       font-size:23px;   
+  }
+  #home{
+      column-count: 1;
+  }
+  .me {
+      padding: 50px;
+      text-align: center;
+  }
+  .avatar{
+      display: none;
   }
 }
