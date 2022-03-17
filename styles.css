@@ -79,6 +79,10 @@ hr{
   margin:20px;
   gap:48%;
 }
+p{
+  border-left: 1px solid #1abc9c;
+  padding-left: 20px;
+}
 #home{
       column-count: 2;
   column-gap: 40px;
@@ -89,6 +93,11 @@ hr{
 
 .me{
     padding: 25% 0% 25% 20%;
+}
+
+.connect i{
+  padding: 10px;
+  font-size: 30px;
 }
 
 h2{
