@@ -15,7 +15,7 @@ cancelBtn.onclick = ()=>{
 //typewriter effect
 
 const textDisplay = document.getElementById('text');
-const phrases = ["Yusra Ahmed✨ ", 'Fullstack Developer'];
+const phrases = ["Yusra. ", ' Fullstack Developer.'];
 let i = 0
 let j = 0
 let currentPhrase = []

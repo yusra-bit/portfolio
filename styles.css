@@ -4,7 +4,7 @@
   padding:0;
   box-sizing:border-box;
   font-family:'poppins';
-  outline :2px solid black
+  
 }
 
 .content{
@@ -12,14 +12,14 @@
   margin:auto;
   padding:0px 30px;
 }
-.navbar{
+.navibar{
   position:sticky;
   z-index:4;
   width:100%;
   padding:10px 0;
-  background-color:pink;
+  
 }
-.navbar .content{
+.navibar .content{
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -27,18 +27,18 @@
 .logo{
   padding-left:20px;
 }
-.navbar .logo img{
+.navibar .logo img{
   width:40px;
   height:40px;
 }
-.navbar .menu-list{
+.navibar .menu-list{
   display:inline-flex;
 }
 .menu-list li{
   list-style:none;
 }
 .menu-list li a{
-  color:#fff;
+  color:black;
   font-size:18px;
   font-weight:500;
   margin-left:25px;
@@ -50,10 +50,10 @@
 }
 
 .menu-list li a{
-  color: #fff;
+  color: black;
 }
 .icon{
-  color:#fff;
+  color:black;
   font-size:20px;
   cursor:pointer;
   display:none;
@@ -62,6 +62,14 @@
   position: absolute;
   right:30px;
   top:20px;
+  color: white;
+}
+hr{
+   border: 0;
+    border-bottom: 1px solid black;
+    background: black;
+    width: 40%;
+    margin-left: 30%;
 }
 .bio {
   display:flex; 
@@ -75,22 +83,48 @@
       column-count: 2;
   column-gap: 40px;
   column-rule-width: 1px;
+  padding-bottom:38px;
   
 }
 
 .me{
-    padding: 30% 0% 25% 20%;
+    padding: 25% 0% 25% 20%;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 2.5rem;
+    font-weight: 700;
     padding-bottom: 16px;
     
 }
 p{
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
+h3{
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding:90px 0 15px 0;
+}
+#skills{
+  text-align: center;
+  
+  padding-bottom: 20px;
+}
+.lang-badges{
+  padding:0 30%;
+
+}
+.logo{
+
+  padding:0 0 10px 0;
+}
+#projects{
+  text-align: center;
+}
+
+
 @media (max-width: 868px){
   .icon{
     display:block;
@@ -98,17 +132,15 @@ p{
   .icon.hide{
     display:none;
   }
-  body{
-    background-color:blue;
-  }
-  .navbar .menu-list{
+ 
+  .navibar .menu-list{
     position:fixed;
     top:0;
     left:-100%;
     height:100vh;
     width:100%;
     max-width:400px;
-    background-color:pink;
+    background-color:black;
     opacity:0.8;
     display:block;
     padding:40px;
@@ -116,16 +148,17 @@ p{
     transition: all 0.3s ease;
   }
   
-  .navbar .menu-list.active{
+  .navibar .menu-list.active{
     left:0%;
   }
   
-  .navbar .menu-list li{
+  .navibar .menu-list li{
     margin-top:45px;
   }
   
-    .navbar .menu-list li a{
+    .navibar .menu-list li a{
       font-size:23px;   
+      color: white;
   }
   #home{
       column-count: 1;
@@ -136,5 +169,8 @@ p{
   }
   .avatar{
       display: none;
+  }
+  .lang-badges{
+    padding: 20px;
   }
 }
