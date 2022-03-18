@@ -84,7 +84,7 @@ p{
   padding-left: 20px;
 }
 #home{
-      column-count: 2;
+  column-count: 2;
   column-gap: 40px;
   column-rule-width: 1px;
   padding-bottom:38px;
@@ -92,7 +92,7 @@ p{
 }
 
 .me{
-    padding: 25% 0% 25% 20%;
+  padding: 25% 0% 25% 20%;
 }
 
 .connect i{
@@ -118,8 +118,7 @@ h3{
 }
 #skills{
   text-align: center;
-  
-  padding-bottom: 20px;
+   padding-bottom: 20px;
 }
 .lang-badges{
   padding:0 30%;
@@ -132,7 +131,18 @@ h3{
 #projects{
   text-align: center;
 }
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card{
+    border: 1px lid #1abc9c;
 
+}
+.cards{
+  padding:15px 0 15px 45px;
+}
 
 @media (max-width: 868px){
   .icon{
@@ -165,9 +175,9 @@ h3{
     margin-top:45px;
   }
   
-    .navibar .menu-list li a{
-      font-size:23px;   
-      color: white;
+  .navibar .menu-list li a{
+    font-size:23px;   
+    color: white;
   }
   #home{
       column-count: 1;
