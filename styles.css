@@ -144,6 +144,17 @@ h3{
   padding:15px 0 15px 45px;
 }
 
+#contact{
+}
+input, textarea{  
+  text-align: center;
+border: none;
+border-bottom: 1px solid black;
+}
+
+textarea:active{
+border: none;
+}
 @media (max-width: 868px){
   .icon{
     display:block;
