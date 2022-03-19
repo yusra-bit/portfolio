@@ -45,9 +45,21 @@
   text-decoration:none;
   transition: all 0.3s ease;
 }
-.menu-list li a:hover{
-  color:#1abc9c
+a {
+  background: linear-gradient(0deg, #1abc9c, #1abc9c) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
 }
+a:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.underline {
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
 
 .menu-list li a{
   color: black;
@@ -71,6 +83,16 @@ hr{
     width: 40%;
     margin-left: 30%;
 }
+
+h1{
+  font-weight: 900;
+}
+.cv{
+  padding: 5px;
+  border: 2px solid #1abc9c;
+  border-radius: 8px;
+}
+
 .bio {
   display:flex; 
   flex-direction:row;
@@ -79,10 +101,7 @@ hr{
   margin:20px;
   gap:48%;
 }
-p{
-  border-left: 1px solid #1abc9c;
-  padding-left: 20px;
-}
+
 #home{
   column-count: 2;
   column-gap: 40px;
@@ -99,11 +118,15 @@ p{
   padding: 10px;
   font-size: 30px;
 }
+.connect i:hover{
+  color: #1abc9c;
+}
 
 h2{
-    font-size: 2.5rem;
-    font-weight: 700;
-    padding-bottom: 16px;
+    font-size: 1.8rem;
+    font-weight: 500;
+   
+    
     
 }
 p{
@@ -112,16 +135,18 @@ p{
 }
 h3{
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.5rem;
   padding:90px 0 15px 0;
 }
 #skills{
   text-align: center;
-   padding-bottom: 20px;
+  
+   padding-bottom: 60px;
+   padding-top: 70px;
 }
 .lang-badges{
-  padding:0 30%;
+  padding:0 20%;
 
 }
 .logo{
@@ -129,32 +154,56 @@ h3{
   padding:0 0 10px 0;
 }
 #projects{
+  padding-bottom: 20px;
+  padding-top: 70px;
   text-align: center;
 }
+.project-heading, .skills-heading, .contact-heading{
+  padding-bottom: 25px;
+}
 .container{
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.card{
-    border: 1px lid #1abc9c;
 
-}
 .cards{
   padding:15px 0 15px 45px;
 }
 
-#contact{
+.card-img-top{
+    height: 280px;
+
 }
-input, textarea{  
-  text-align: center;
-border: none;
-border-bottom: 1px solid black;
+#contact{
+  padding-bottom: 30px;
+  justify-content: center;
 }
 
-textarea:active{
-border: none;
+form{      
+  justify-content: center;
+  align-items: center;
+  
+  display: flex;
+  flex-direction: column;
 }
+
+
+input, textarea{   
+    margin-bottom: 20px;
+ width: 400px;
+border: none;
+border-bottom: 2px solid black;
+}
+
+input:focus{
+outline: none;
+}
+textarea:focus{
+  outline: none;
+}
+
 @media (max-width: 868px){
   .icon{
     display:block;
@@ -202,5 +251,9 @@ border: none;
   }
   .lang-badges{
     padding: 20px;
+  }
+  #contact{
+    display: flex;
+    flex-direction: row;
   }
 }
