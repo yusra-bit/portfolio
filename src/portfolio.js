@@ -59,10 +59,9 @@ const skills = [
   'MongoDB',
   'PHP',
   'MySQL',
-  'Tailwondcss',
+  'Tailwindcss',
   'Git',
-  'Figma',
-  'Jest',
+  'Figma'
 ]
 
 const contact = {
