@@ -33,8 +33,8 @@ const projects = [
     description:
       'MovieLand is a website built with React and an API that provides users with a comprehensive and user-friendly way to explore and discover new movies.',
     stack:  ['React', 'API'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://github.com/yusra-bit/movieland',
+    livePreview: 'https://moviessland.netlify.app/',
   },
   {
     name: 'BookList',
