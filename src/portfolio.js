@@ -10,10 +10,10 @@ const about = {
   role: 'Fullstack Developer',
   description:
     "I'm a fullstack developer who can build anything, from the ground up. I have a deep understanding of both front-end and back-end development, and I'm always looking for new ways to use technology to solve real-world problems. ",
-  resume: 'https://example.com',
+  resume: 'https://drive.google.com/file/d/1fJ0_jBD2_wkXe1-wWZHGH4rc29rRwJxY/view',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/yusra-ahmed-14541b209/',
+    github: 'https://github.com/yusra-bit',
   },
 }
 
@@ -41,8 +41,17 @@ const projects = [
     description:
       'BookList is a CRUD application that allows you to create, read, update, and delete books in your collection.',
     stack: ['React', 'Node.js', 'MongoDB'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://github.com/yusra-bit/booklist-mern',
+ //   livePreview: 'https://github.com',
+  },
+  ,
+  {
+    name: 'Hotel Management',
+    description:
+      'A hotel management website is a web application that helps hotels manage their operations and bookings.',
+    stack: ['PHP', 'MySQL', 'Bootstrap'],
+    sourceCode: 'https://github.com/yusra-bit/hotel_managment_system',
+    
   },
 ]
 
