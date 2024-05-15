@@ -53,6 +53,24 @@ const projects = [
     sourceCode: 'https://github.com/yusra-bit/hotel_managment_system',
     
   },
+  ,
+  {
+    name: 'Peekabooks',
+    description:
+      ' Peekabooks is a well-designed website with a user-friendly interface, offering curated genres for effortless exploration of literary works.',
+    stack: ['Canva', 'Figma', 'Webflow'],
+    sourceCode: 'https://bookstore-site-85f07c.webflow.io/',
+    
+  },
+   ,
+  {
+    name: 'Vision Creative ',
+    description:
+      ' ',
+    stack: ['Canva', 'Figma', 'Webflow'],
+    sourceCode: 'https://yusras-fabulous-site.webflow.io/',
+    
+  },
 ]
 
 const skills = [
@@ -71,6 +89,8 @@ const skills = [
   'Tailwindcss',
   'Git',
   'Figma'
+  'Canva'
+  'Webflow'
 ]
 
 const contact = {
