@@ -88,9 +88,9 @@ const skills = [
   'MySQL',
   'Tailwindcss',
   'Git',
-  'Figma'
-  'Canva'
-  'Webflow'
+  'Figma',
+  'Canva',
+  'Webflow',
 ]
 
 const contact = {
